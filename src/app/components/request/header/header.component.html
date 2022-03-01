@@ -1,0 +1,101 @@
+<header>
+  <nav class="navbar navbar-expand-lg p-4 position-fixed start-0 end-0 bg-1" style="z-index: 3;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/no-image.png" style="width: 50px; height: 50px;">
+      </a>
+      <div class="text-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-white fs-4"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="w-100 d-flex justify-content-lg-end justify-content-center text-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quoting Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CRM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">eQuote</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="position-relative nav-item pt-2 px-1">
+              <div class="d-flex">
+                <div (mouseover)="changeArrowInd()" (mouseout)="changeArrowInd()">
+                  <a class="indu text-white pe-2" role="button">
+                    Industries
+                  </a>
+                  <div class="menu-1 p-4 border rounded-7 mt-2">
+                    <div class="d-flex justify-content-center">
+                      <div class="row">
+                        <div class="col-lg-6 p-3">
+                          <i class="fas fa-cube fs-2 pe-2"></i>
+                          <span>Supply Chain</span>
+                        </div>
+                        <div class="col-lg-6 p-3">
+                          <i class="fas fa-cube fs-2 pe-2"></i>
+                          <span>Supply Chain</span>
+                        </div>
+                        <div class="col-lg-6 p-3">
+                          <i class="fas fa-cube fs-2 pe-2"></i>
+                          <span>Supply Chain</span>
+                        </div>
+                        <div class="col-lg-6 p-3">
+                          <i class="fas fa-cube fs-2 pe-2"></i>
+                          <span>Supply Chain</span>
+                        </div>
+                        <div class="col-lg-6 p-3">
+                          <i class="fas fa-cube fs-2 pe-2"></i>
+                          <span>Supply Chain</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <i class="fas fa-angle-down text-white" *ngIf="!arrowInd"></i>
+                  <i class="fas fa-angle-up text-white" *ngIf="arrowInd"></i>
+                </div>
+              </div>
+            </li>
+            <li class="position-relative nav-item pt-2 px-1">
+              <div class="d-flex">
+                <div (mouseover)="changeArrowWorld()" (mouseout)="changeArrowWorld()">
+                  <i class="fas fa-globe world pe-2" role="button"></i>
+                  <div class="menu-2 p-4 rounded-7">
+                    <div class="d-flex justify-content-center text-center flex-column">
+                      <span>English</span>
+                      <span>Spanish</span>
+                      <span>French</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <i class="fas fa-angle-down text-white" *ngIf="!arrowWorld"></i>
+                  <i class="fas fa-angle-up text-white" *ngIf="arrowWorld"></i>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-1">SIGN IN</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,110 @@
+.ctn-d1 {
+  background-image: url("../../../assets/img/bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.men:focus {
+  background-color: #0e8dea;
+  color: #fff;
+}
+.my-element1 {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+.my-element2 {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+.my-element3 {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.my-element4 {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.nav-link {
+  text-decoration: none;
+  color: #000;
+}
+.dropdown {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.btn-chat {
+  background-color: #0e8dea;
+  border-radius: 50%;
+  border: 0;
+  color: #fff;
+  padding: 20px;
+}
+// .dropdown-menu {
+//   display: block;
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 0.3s;
+//   left: auto;
+//   right: -10px;
+//   bottom: 100%;
+// }
+// .dropdown-menu.show {
+//   opacity: 1;
+//   visibility: visible;
+//   bottom: 100%;
+// }
+// .dropdown-menu[data-bs-popper] {
+//   left: auto;
+//   right: -10px;
+//   bottom: 100%;
+// }
+.dropdown-menu {
+  display: block;
+  transition: 0.2s;
+  border-radius: 7px;
+  opacity: 0;
+  visibility: hidden;
+  top: auto;
+  bottom: 85px;
+  left: auto;
+  right: 10px;
+  margin-bottom: -50px;
+  width: 600px;
+}
+.dropdown-menu[data-bs-popper] {
+  left: auto;
+  right: 10px;
+}
+.dropdown-menu.show {
+  transition: 0.2s;
+  margin-bottom: 0;
+  margin-top: 0;
+  opacity: 1;
+  visibility: visible;
+  padding-top: 0;
+}
+.btn-chat::after {
+  font-size: 28px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f590";
+}
+.btn-chat.show::after {
+  font-size: 28px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00d";
+}
