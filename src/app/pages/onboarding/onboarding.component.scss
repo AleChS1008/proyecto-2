@@ -3,39 +3,38 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  padding-top: 170px;
+  padding-left: 70px;
 }
-.men:focus {
-  background-color: #0e8dea;
-  color: #fff;
-}
-.my-element1 {
-  display: inline-block;
-  margin: 0 0.5rem;
 
-  animation: backInDown; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s; /* don't forget to set a duration! */
-}
-.my-element2 {
-  display: inline-block;
-  margin: 0 0.5rem;
+// .my-element1 {
+//   display: inline-block;
+//   margin: 0 0.5rem;
 
-  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s; /* don't forget to set a duration! */
-}
-.my-element3 {
-  display: inline-block;
-  margin: 0 0.5rem;
+//   animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+//   animation-duration: 1s; /* don't forget to set a duration! */
+// }
+// .my-element2 {
+//   display: inline-block;
+//   margin: 0 0.5rem;
 
-  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
-.my-element4 {
-  display: inline-block;
-  margin: 0 0.5rem;
+//   animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+//   animation-duration: 1s; /* don't forget to set a duration! */
+// }
+// .my-element3 {
+//   display: inline-block;
+//   margin: 0 0.5rem;
 
-  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
+//   animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+//   animation-duration: 2s; /* don't forget to set a duration! */
+// }
+// .my-element4 {
+//   display: inline-block;
+//   margin: 0 0.5rem;
+
+//   animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+//   animation-duration: 2s; /* don't forget to set a duration! */
+// }
 .nav-link {
   text-decoration: none;
   color: #000;
@@ -44,6 +43,7 @@
   position: fixed;
   right: 20px;
   bottom: 20px;
+  z-index: 300;
 }
 .btn-chat {
   background-color: #0e8dea;
@@ -51,26 +51,12 @@
   border: 0;
   color: #fff;
   padding: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-// .dropdown-menu {
-//   display: block;
-//   opacity: 0;
-//   visibility: hidden;
-//   transition: 0.3s;
-//   left: auto;
-//   right: -10px;
-//   bottom: 100%;
-// }
-// .dropdown-menu.show {
-//   opacity: 1;
-//   visibility: visible;
-//   bottom: 100%;
-// }
-// .dropdown-menu[data-bs-popper] {
-//   left: auto;
-//   right: -10px;
-//   bottom: 100%;
-// }
 .dropdown-menu {
   display: block;
   transition: 0.2s;
@@ -101,10 +87,30 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f590";
+  animation-name: view1;
+  animation-duration: 0.4s;
 }
 .btn-chat.show::after {
   font-size: 28px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f00d";
+  animation-name: view2;
+  animation-duration: 0.4s;
+}
+@keyframes view1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes view2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
